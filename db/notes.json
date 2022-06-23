@@ -1,6 +1,20 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "benjamin",
+    "text": "helllo yall",
+    "note_id": {
+      "NIL": "00000000-0000-0000-0000-000000000000"
     }
+  },
+  {
+    "title": "next note ",
+    "text": "where are my saved notes\n",
+    "note_id": {
+      "NIL": "00000000-0000-0000-0000-000000000000"
+    }
+  }
 ]

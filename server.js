@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const notepage = require('./db/notes.json');
 const express = require('express');
-const uuid = require('uuid');
+const uuid = require('./utils/uuid');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -38,7 +38,7 @@ app.post('/api/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      note_id: uuid,
+      note_id: uuid(),
     };
     notepage.push(newNote);
     const noteStr = JSON.stringify((notepage), null, 2)
