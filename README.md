@@ -8,17 +8,15 @@
 4. [Resources](#resources)
 
 ## Description 
-- In this assignment I classified my html elements with existing classes and styles from the provided css, as well as from bootstrap. I was able to create functions that aplly these styles in coordination with the current time of day. YAY
+- In this assignment I installed express and created a server.js defining my routes and paths, mathcing the patterns appropriately. Thus, when the user creates a new note and adds it, is then saved to the notes.json page and also is given a unique id. 
 
 
-## Visuals
-![Screen Shot](./assets/Workduler.png)
 
 ## Authors and Acknowledgement
 - Ben Ashworth
 
 ## Resources
-[Repo Link](https://github.com/bashworthj/Work-Schedule) 
+[Repo Link](https://github.com/bashworthj/Note-Taker-App) 
 
-[Live Site](https://bashworthj.github.io/Work-Schedule/)
+[Heroku Site](https://bashworthj.github.io/Work-Schedule/)
  
