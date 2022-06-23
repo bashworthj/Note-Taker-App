@@ -30,21 +30,28 @@ app.get('/api/notes', (req, res) => {
 //  You'll need to find a way to give each note a unique id when it's saved
 
 app.post('/api/notes', (req, res) => {
-  const { product, review, username } = req.body;
+  const { title, text } = req.body;
 
   // If all the required properties are present
-  if (product && review && username) {
+  if (title && text) {
     // Variable for the object we will save
-    const newReview = {
-      product,
-      review,
-      username,
-      review_id: uuid,
+    const newNote = {
+      title,
+      text,
+      note_id: uuid,
     };
-
-    const response = {
-      status: 'success',
-      body: newReview,
-    };;
+    notepage.push(newNote);
+    const noteStr = JSON.stringify((notepage), null, 2)
+    fs.writeFile('./db/notes.json', noteStr, () => {
+      const response = {
+        body: newNote,
+      };
+  
+      res.json(response);
+    })
+  
 }});
 
+app.listen(PORT, () =>
+  console.log(`App listening at http://localhost:${PORT} 🚀`)
+);
