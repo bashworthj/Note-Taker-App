@@ -18,5 +18,5 @@
 ## Resources
 [Repo Link](https://github.com/bashworthj/Note-Taker-App) 
 
-[Heroku Site](https://bashworthj.github.io/Work-Schedule/)
+[Heroku Site](https://pure-inlet-58813.herokuapp.com/notes)
  
